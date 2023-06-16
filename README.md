@@ -3,7 +3,7 @@
 ---
 
 Este projeto é uma landing page.<br>
-Estou pensanod no projeto ao longo que vou desenvolvendo.
+Estou pensando no projeto ao longo que vou desenvolvendo.
 
 ## 🚀 Em desenvolvimento...
 
