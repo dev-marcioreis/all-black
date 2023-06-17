@@ -56,7 +56,7 @@ html {
   scroll-padding-top: 5rem;
 }
 body {
-  background: var(--color-gradient);
+  background: var(--color-bg);
   color: var(--color-text);
   line-height: var(--line-height);
   font-size: var(--font-size);
@@ -117,6 +117,11 @@ img {
 }
 .section__title {
   text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: -4px;
+  margin-block-end: 1rem;
 }
 .section__title-gradient {
   background: var(--color-gradient);
@@ -235,6 +240,7 @@ img {
   box-shadow: var(--shadow-1);
 }
 
+
 /*==========Media Query Header==========*/
 @media (max-width: 992px) {
   .navbar__close, .navbar__toggle {
@@ -247,9 +253,9 @@ img {
   }
   .navbar__menu {
     position: fixed;
-    top: -100%;
+    top: -150%;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100vh;
     background: var(--color-bg);
     box-shadow: var(--shadow-1);
@@ -281,8 +287,8 @@ img {
   justify-content: center;
 }
 .home__image img {
-  filter: contrast(1.5) brightness(2);
-  mix-blend-mode: multiply;
+  filter: contrast(1.5) brightness(1.1);
+  mix-blend-mode: color-dodge;
   -webkit-box-reflect: below -150px linear-gradient(to bottom, hsla(0, 0%, 13%, 0), hsla(0, 0%, 13%, 0.11));
 }
 .home__data {
@@ -367,6 +373,78 @@ img {
 @media (max-width: 992px) {
   .sponsor {
     padding: 2rem 0;
+  }
+
+}
+
+
+/*==========Sizes==========*/
+.sizes__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s__data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+.sizes__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.sizes__data i {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.sizes__title {
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.sizes__subtitle {
+  font-size: 1.2rem;
+  color: var(--color-white);
+}
+.sizes__image {
+  filter: contrast(1.3);
+  transition: var(--transition);
+  animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+
+/*==========Media Query Sizes==========*/
+@media (max-width: 992px) {
+  .sizes__content {
+    flex-direction: column;
+  }
+
+}
+
+
+/*==========Media Query Mobile Sizes==========*/
+@media (max-width: 768px) {
+  .sizes {
+    overflow: hidden;
+  }
+  .s__data {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-block-start: 3rem;
   }
 
 }
