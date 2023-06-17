@@ -60,7 +60,6 @@ body {
   color: var(--color-text);
   line-height: var(--line-height);
   font-size: var(--font-size);
-  height: 100vh;
 }
 
 /*==========General Styles==========*/
@@ -335,4 +334,39 @@ img {
     width: 100%;
   }
   
+}
+
+
+/*==========Sponsor==========*/
+.sponsor__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  place-items: center;
+  gap: 2rem;
+}
+.sponsor__image {
+  width: 4rem;
+  transition: var(--transition);
+  animation:  2s up linear infinite;
+}
+
+@keyframes up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/*==========Media Query Sponsor==========*/
+@media (max-width: 992px) {
+  .sponsor {
+    padding: 2rem 0;
+  }
+
 }
