@@ -17,4 +17,4 @@ Márcio Reis
 
 
 ---
-![image](https://github.com/dev-marcioreis/all-black/assets/122680054/01f48558-be1f-41dd-988d-cad4b2b8d966)
+![image](https://github.com/dev-marcioreis/all-black/assets/122680054/cf4bc01d-10da-4e22-997c-e5c49b29eca2)
