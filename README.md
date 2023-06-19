@@ -2,8 +2,7 @@
 
 ---
 
-Este projeto é uma landing page.<br>
-Estou pensando no projeto ao longo que vou desenvolvendo.
+Este projeto é uma landing page teste para um cliente.
 
 ## 🚀 Em desenvolvimento...
 
