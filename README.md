@@ -2,9 +2,9 @@
 
 ---
 
-Este projeto é uma landing page teste para um cliente.
+Este projeto é uma landing page teste.
 
-## 🚀 Em desenvolvimento...
+## 🚀 Finalizado!
 
 ## 📋 Tecnologias
 HTML + CSS + JavaScript
